@@ -1,0 +1,287 @@
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #343a40;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Estilos Específicos */
+#banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+#banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#banner p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+.sintomas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.sintoma {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #1e3c72;
+}
+
+.sintoma h4 {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+}
+
+.dica {
+    margin-bottom: 2.5rem;
+}
+
+.dica h3 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.dica ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.dica li {
+    margin-bottom: 0.5rem;
+}
+
+.dica strong {
+    color: #1e3c72;
+}
+
+/* Estilos do Quiz */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quiz-container p {
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.question {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.question p {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.question label:hover {
+    background: #e9ecef;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#resultado {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+    
+    .quiz-container {
+        padding: 1rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
